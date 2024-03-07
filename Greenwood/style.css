@@ -1,0 +1,123 @@
+/* Apply a background color and some padding to the body */
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the heading */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style the sections */
+section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the headings of the sections */
+h2 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Style the paragraphs in the sections */
+p {
+  color: #666;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  section {
+    padding: 5px;
+  }
+}
+
+/* Add styles for the image */
+img {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+}
+
+/* Style the form */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels and inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+div.container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Additional styles for event cards */
+.events-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  flex: 0 0 calc(31.5% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+  }
+
+  .event-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
