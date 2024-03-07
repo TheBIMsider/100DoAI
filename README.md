@@ -1,4 +1,7 @@
 # 100DoAI
+
+#The 100 Days of AI
+
 A repository for the [100 Days of AI Challenge](https://www.100daysai.com/)
 
 What is the 100 Days of AI you ask? Well, it is free, fun and effective 30-minute bite-sized lessons delivered daily to guide your AI learning journey.
