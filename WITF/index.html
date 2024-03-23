@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container"> 
+        <h1>Recipe Finder</h1>
+        <div id="recipe-count-buttons">
+            <button data-count="1">1 Recipe</button>
+            <button data-count="2" class="selected">2 Recipes</button>
+            <button data-count="3">3 Recipes</button>
+        </div> <br>
+        <select id="unit-selector">
+          <option value="us">US Units</option>
+          <option value="metric">Metric Units</option>
+      </select> <br>
+        <input type="text" id="searchInput" placeholder="Enter your main ingredient">
+        <button id="searchBtn">Search Recipes</button>
+        <div id="recipeResults"></div> 
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

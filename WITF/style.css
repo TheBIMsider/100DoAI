@@ -1,0 +1,26 @@
+.container {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#recipe-count-buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+#recipe-count-buttons button.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#recipeResults div { /* Style individual recipes */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
