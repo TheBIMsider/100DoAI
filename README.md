@@ -9,3 +9,6 @@ This is where I store the exercises or missions that need a "code" home. Even th
 Mission 3: [Greenwood Landing Page](https://thebimsider.github.io/100DoAI/Greenwood/)  
 
 Mission 4: [Non Kommon Deesign Social Media Marketing](https://thebimsider.github.io/100DoAI/NKD/) 
+
+Mission 5: [Recipe Finder](https://thebimsider.github.io/100DoAI/WITF/) 
+
