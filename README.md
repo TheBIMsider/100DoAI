@@ -10,5 +10,5 @@ Mission 3: [Greenwood Landing Page](https://thebimsider.github.io/100DoAI/Greenw
 
 Mission 4: [Non Kommon Deesign Social Media Marketing](https://thebimsider.github.io/100DoAI/NKD/) 
 
-Mission 5: [Recipe Finder](https://thebimsider.github.io/100DoAI/WITF/) Spoonacular API Key Required
+Mission 5: [Recipe Finder](https://thebimsider.github.io/100DoAI/WITF/) Note: [Spoonacular API Key Required](https://spoonacular.com/food-api)
 
