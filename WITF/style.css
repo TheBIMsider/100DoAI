@@ -1,0 +1,83 @@
+.container {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#recipe-count-buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+#recipe-count-buttons button.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#recipeResults div { /* Style individual recipes */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Add a slight rounded corner */ 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+#unit-selector {
+  margin-bottom: 20px; /* Adjust the spacing as needed */
+}
+
+#chat-area {
+  width: 400px;
+  height: 350px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#chat-messages {
+  height: 300px;
+  overflow-y: auto; /* Add a scrollbar if messages get long */
+  padding: 10px; 
+}
+
+#chat-form {
+  display: flex; /* Align input and button nicely */
+}
+
+#chat-input {
+  flex-grow: 1; /* Input takes up available space */
+  padding: 8px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+} 
+
+.chat-message.user {
+  background-color: #eee;
+  text-align: left; 
+  align-self: flex-start; /* Align to the left */
+}
+
+.chat-message.bot { 
+  background-color: #e0f0ff; 
+  text-align: right; 
+  align-self: flex-end;   /* Align to the right */
+  border-radius: 10px 0 10px 10px; /* Rounded corners on the left side */
+}
+
+/* Optional: Add a subtle loading animation while waiting for a chatbot response */
+.chat-message.bot.loading::after {
+  content: '...';
+  animation: ellipsis 1s infinite; 
+}
+
+@keyframes ellipsis {
+  to { content: '....'; }
+}
+
+

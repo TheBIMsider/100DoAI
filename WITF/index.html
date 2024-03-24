@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Find 'n Chat</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container"> 
+      <div id="chat-area">
+        <div id="chat-messages"></div> <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Ask a question about the recipes...">
+            <button type="submit">Send</button>
+        </form>
+      </div>
+        <h1>Recipe Find 'n Chat</h1>
+        <div id="recipe-count-buttons">
+            <button data-count="1" class="selected">1 Recipe</button>
+            <button data-count="2">2 Recipes</button>
+            <button data-count="3">3 Recipes</button>
+        </div> <br>
+        <select id="unit-selector">
+          <option value="us">US Units</option>
+          <option value="metric">Metric Units</option>
+      </select> <br>
+      <br>
+        <input type="text" id="searchInput" placeholder="Enter your main ingredient">
+        <button id="searchBtn">Search Recipes</button>
+        <br>
+        <br>
+        <div id="recipeResults"></div> 
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
