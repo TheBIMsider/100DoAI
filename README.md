@@ -12,3 +12,6 @@ Mission 4: [Non Kommon Deesign Social Media Marketing](https://thebimsider.githu
 
 Mission 5: [Recipe Find 'n Chat](https://thebimsider.github.io/100DoAI/WITF/) Note: [Spoonacular](https://spoonacular.com/food-api) API & [OpenAI](https://platform.openai.com/docs/api-reference/introduction) API Keys Required
 
+Mission 6: [My Portfolio](https://thebimsider.github.io/100DoAI/Portfolio/) 
+
+
