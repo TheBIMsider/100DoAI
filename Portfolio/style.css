@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sticky-header {
+  background-color: #515151;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this line */
+  margin-left: auto; /* Update this line */
+}
+
+.header-button {
+  background-color: #d4662c;
+  color: #fff;
+  padding: 15px 20px; /* Update this line */
+  border-radius: 50px; /* Update this line */
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header-button:first-child {
+  margin-left: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #d4662c;
+  font-family: "Comic Sans", cursive; /* Update this line */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  flex: 1 0 auto; /* Add this line */
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 50px; /* Update this line */
+  padding: 20px;
+}
+
+/* Project card styles */
+.project-card {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  width: 400px; /* Add this line */
+  height: 400px; /* Add this line */
+}
+
+h3 {
+  margin-top: 10px; /* Add this line */
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Comic Sans', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+  background-color: #d4662c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px; /* Add this line */
+}
+
+.image-container {
+  width: 370px;
+  height: 250px;
+  overflow: hidden;
+  position: relative; /* Add this line */
+  margin: 0 auto; /* Add this line */
+  border: 1px solid #d4662c; /* Add this line */
+}
+
+.image-wrapper {
+  position: absolute; /* Add this class */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
