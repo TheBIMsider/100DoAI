@@ -1,0 +1,176 @@
+body {
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sticky-header {
+  background-color: #515151;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this line */
+  margin-left: auto; /* Update this line */
+}
+
+.header-button {
+  background-color: #d4662c;
+  color: #fff;
+  padding: 15px 20px; /* Update this line */
+  border-radius: 50px; /* Update this line */
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header-button:first-child {
+  margin-left: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #d4662c;
+  font-family: monospace;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  flex: 1 0 auto; /* Add this line */
+  justify-content: center;
+  align-items: center;
+  background-image: url('BG.png');
+  background-size: 15%; /* This ensures the image covers the entire container */
+  background-position: top left; /* Centers the image */
+  background-repeat: repeat; /* Prevents the image from repeating */
+  padding: 20px; /* Add padding to prevent content from overlapping with the image */
+}
+
+.container2 {
+  display: flex;
+  flex: 1 0 auto; /* Add this line */
+  justify-content: center;
+  align-items: center;
+  background-image: url('BG2.jpeg');
+  background-size: 35%; /* This ensures the image covers the entire container */
+  background-position: top left; /* Centers the image */
+  background-repeat: repeat; /* Prevents the image from repeating */
+  padding: 20px; /* Add padding to prevent content from overlapping with the image */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px 15px; /* Update this line */
+  padding: 20px;
+}
+
+/* Project card styles */
+.project-card {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  width: 500px; /* Add this line */
+  height: 400px; /* Add this line */
+}
+
+h3 {
+  margin-top: 6px; /* Add this line */
+  font-size: 24px;
+  margin-bottom: 1px;
+  font-family: monospace;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+/* Footer styles */
+footer {
+  background-color: #d4662c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px; /* Add this line */
+}
+
+.image-container {
+  width: 470px;
+  height: 250px;
+  overflow: hidden;
+  position: relative; /* Add this line */
+  margin: 0 auto; /* Add this line */
+  border: 1px solid #d4662c; /* Add this line */
+}
+
+.image-wrapper {
+  position: absolute; /* Add this class */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Intro section styles */
+.intro {
+  text-align: center;
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 30px;
+  color: #d4662c;
+  margin-bottom: 20px;
+}
+
+.intro h4 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.tweet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tweet-grid > * {
+  width: 100%;
+}
+
+/* Additional styles */
+.twitter-tweet {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
