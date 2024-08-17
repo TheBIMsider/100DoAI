@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Greenwood Community</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Greenwood Community</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <h1>The Online Home for the Town of Greenwood</h1>
 
-<body>
-  <h1>The Online Home for the Town of Greenwood</h1>
+    <!-- Add an image -->
+    <img
+      src="Greenwood.png"
+      alt="Greenwood Community Image"
+      style="max-width: 40%"
+    />
 
-  <!-- Add an image -->
-  <img src="Greenwood.png" alt="Greenwood Community Image" style="max-width: 40%;">
+    <section>
+      <div class="container">
+        <h2>Events</h2>
+        <p>Stay updated on the latest community events here.</p>
+        <!-- Event Cards Container -->
+        <div class="events-container">
+          <!-- Event Card 1 -->
+          <div class="event-card">
+            <img src="Back Sale.png" alt="Event 1 Image" />
+            <h3>Bake Sale</h3>
+            <p>Date: March 15, 2024</p>
+            <p>Time: 11:00 AM - 1:00 PM</p>
+            <p>Location: High School</p>
+            <p>Contact: John Doe - john@example.com</p>
+          </div>
 
+          <!-- Event Card 2 -->
+          <div class="event-card">
+            <h3>Bottle Drive</h3>
+            <p>Date: April 20, 2024</p>
+            <p>Time: 10:00 AM - 4:00 PM</p>
+            <p>Location: Throughout The Community</p>
+            <p>Contact: Jane Smith - jane@example.com</p>
+            <img src="Bottle.png" alt="Event 2 Image" />
+          </div>
 
-  <section>
-    <div class="container">
-    <h2>Events</h2>
-    <p>Stay updated on the latest community events here.</p>
-    <!-- Event Cards Container -->
-    <div class="events-container">
-      <!-- Event Card 1 -->
-      <div class="event-card">
-        <img src="Back Sale.png" alt="Event 1 Image">
-        <h3>Bake Sale</h3>
-        <p>Date: March 15, 2024</p>
-        <p>Time: 11:00 AM - 1:00 PM</p>
-        <p>Location: High School</p>
-        <p>Contact: John Doe - john@example.com</p>
+          <!-- Event Card 3 -->
+          <div class="event-card">
+            <img src="SD.png" alt="Event 3 Image" />
+            <h3>Square Dance</h3>
+            <p>Date: May 23, 2024</p>
+            <p>Time: 8:00 PM</p>
+            <p>Location: Elks Hall</p>
+            <p>Contact: Bob Johnson - bob@example.com</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Event Card 2 -->
-      <div class="event-card">
-        <h3>Bottle Drive</h3>
-        <p>Date: April 20, 2024</p>
-        <p>Time: 10:00 AM - 4:00 PM</p>
-        <p>Location: Throughout The Community</p>
-        <p>Contact: Jane Smith - jane@example.com</p>
-        <img src="Bottle.png" alt="Event 2 Image">
+    <section>
+      <div class="container">
+        <h2>Local Businesses</h2>
+        <p>Discover information about local businesses in Greenwood.</p>
+        <script src="https://sheetdb.io/s/t/n6in37ttvqcd9.js"></script>
       </div>
+    </section>
 
-      <!-- Event Card 3 -->
-      <div class="event-card">
-        <img src="SD.png" alt="Event 3 Image">
-        <h3>Square Dance</h3>
-        <p>Date: May 23, 2024</p>
-        <p>Time: 8:00 PM</p>
-        <p>Location: Elks Hall</p>
-        <p>Contact: Bob Johnson - bob@example.com</p>
+    <section>
+      <div class="container">
+        <h2>Volunteer Opportunities</h2>
+        <p>
+          Not sure if there is an opportunity to volunteer? <br />
+          Click the button below and ask the Greenwood Business Volunteer AI
+          Assistant.
+          <br />
+          <br />
+          <!-- Button to open the widget -->
+          <button data-buildship-chat-widget-button>
+            Greenwood Business Volunteer AI Assistant
+          </button>
+        </p>
+
+        <h2>Be A Volunteer</h2>
+        <p>Fill out the form below to be submitted as a volunteer.</p>
+
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSc2KstfdbAZkJuaTx7ED0wPEzBGzwJstvj6DApQlDNpatqbfQ/viewform?embedded=true"
+          width="750"
+          height="600"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
       </div>
-    </div>
-  </div>
-  </section>
+    </section>
 
+    <script src="https://unpkg.com/@buildshipapp/chat-widget@^1" defer></script>
+    <script>
+      window.addEventListener('load', () => {
+        window.buildShipChatWidget.config.url =
+          'https://ga24si.buildship.run/talk-to-sheets';
+        window.buildShipChatWidget.config.responseIsAStream = false;
+        window.buildShipChatWidget.config.openOnLoad = false;
+      });
+    </script>
 
-  <section>
-    <div class="container">
-    <h2>Local Businesses</h2>
-    <p>Discover information about local businesses in Greenwood.</p>
-    <script src="https://sheetdb.io/s/t/n6in37ttvqcd9.js"></script>
-  </div>
-  </section>
-
-  <section>
-    <div class="container">
-    <h2>Volunteer Opportunities</h2>
-    <p>Find volunteer opportunities with different organizations in the community.</p>
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2KstfdbAZkJuaTx7ED0wPEzBGzwJstvj6DApQlDNpatqbfQ/viewform?embedded=true" width="750" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-  </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

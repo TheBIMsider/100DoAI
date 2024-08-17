@@ -77,7 +77,7 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #4caf50;
   color: #fff;
   cursor: pointer;
@@ -119,5 +119,35 @@ div.container {
 
   .event-card {
     flex: 0 0 calc(100% - 20px);
+  }
+}
+
+button[data-buildship-chat-widget-button] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[data-buildship-chat-widget-button]:hover {
+  background-color: #45a049;
+}
+
+button[data-buildship-chat-widget-button]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+@media (max-width: 768px) {
+  button[data-buildship-chat-widget-button] {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
