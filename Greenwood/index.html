@@ -94,15 +94,18 @@
       </div>
     </section>
 
-    <script src="https://unpkg.com/@buildshipapp/chat-widget@^1" defer></script>
-    <script>
-      window.addEventListener('load', () => {
-        window.buildShipChatWidget.config.url =
-          'https://ga24si.buildship.run/talk-to-sheets';
-        window.buildShipChatWidget.config.responseIsAStream = false;
-        window.buildShipChatWidget.config.openOnLoad = false;
-      });
-    </script>
+<script src="https://unpkg.com/@buildshipapp/chat-widget@^1" defer></script>
+<script>
+  window.addEventListener("load", () => {
+  window.buildShipChatWidget.config.url = "https://ga24si.buildship.run/executeWorkflow/HDx4V2x257kQu9PBH3vK/b0fb8612-56cc-483c-b83e-5a693b81ed79";
+  window.buildShipChatWidget.config.widgetTitle = "Chat Widget";
+  window.buildShipChatWidget.config.greetingMessage = "Hello, how can I help you today?";
+  window.buildShipChatWidget.config.responseIsAStream = false;
+  window.buildShipChatWidget.config.closeOnOutsideClick = true;
+  window.buildShipChatWidget.config.openOnLoad = false;
+  window.buildShipChatWidget.config.disableErrorAlert = false;
+})
+</script>
 
     <script src="script.js"></script>
   </body>
