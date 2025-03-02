@@ -315,7 +315,26 @@
         <a></a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
         <!-- Add more social media buttons as needed -->
       </div>
-      <p>&copy; 2024 The BIMsider</p>
+      <p>&copy; 2025 The BIMsider</p>
     </footer>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: '67c38604b1e0de18addd1066' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: 'https://runtime-api.voiceflow.com',
+            },
+          });
+        };
+        v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+        v.type = 'text/javascript';
+        s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
   </body>
 </html>
