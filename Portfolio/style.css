@@ -174,3 +174,7 @@ footer {
   margin: 0 auto;
   max-width: 600px;
 }
+
+.empty-placeholder {
+  grid-column: span 1; /* Same as your cards */
+}
